@@ -1,1 +1,53 @@
-*
+* {
+	margin: 10px;
+	padding: 0;
+}
+
+body {
+	background-color: #A66CFF;
+	font-family: Libre Baskerville;
+}
+
+header {
+	text-align: center;
+	height: 55px;
+	width: 100%;
+	border-bottom: 3px solid #B1E1FF;
+	background-color: rgb #AFB4FF;
+  }
+
+  header ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	list-style: none;
+  }
+
+  .portfolio-image{
+	display: flex;
+	border-radius: 50px;
+	height: 140px;
+  }
+
+  .contact-info{
+	display: flex;
+	justify-content: center;
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* color pallet */
+  /* A66CFF purple, 9C9EFE light blue, AFB4FF perriwinkle, B1E1FF light sky blue */
