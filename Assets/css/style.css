@@ -14,27 +14,27 @@ header {
 	width: 100%;
 	border-bottom: 3px solid #B1E1FF;
 	background-color: rgb #AFB4FF;
-  }
+}
 
-  header ul {
+header ul {
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
 	list-style: none;
-  }
+}
 
-  .portfolio-image{
+.portfolio-image{
 	display: flex;
 	border-radius: 50px;
 	height: 140px;
-  }
+}
 
-  .contact-info{
+.contact-info{
 	display: flex;
 	justify-content: center;
-
-
-  }
+	align-items: flex-end;
+	list-style: none;
+}
 
 
 
