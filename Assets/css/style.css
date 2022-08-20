@@ -12,7 +12,7 @@ header {
 	text-align: center;
 	height: 55px;
 	width: 100%;
-	border-bottom: 3px solid #B1E1FF;
+	border-bottom: 13px solid #B1E1FF;
 	background-color: rgb #AFB4FF;
 }
 
@@ -21,8 +21,8 @@ header ul {
 	justify-content: flex-end;
 	align-items: flex-end;
 	list-style: none;
-	margin: -27px;
-	font-size: 12px;
+	margin: 85px;
+	font-size: 15px;
 }
 
 body, html {
@@ -30,7 +30,7 @@ body, html {
 }
 
 .hero-image {
-	background-image: url("../images/black-and-white-clouds.jpeg");
+	background-image: url("../images/clouds-rainbow.webp");
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -49,11 +49,30 @@ body, html {
 
 #portfolio-image{
 	display: flex;
-	filter: grayscale(75%);
+	/* filter: grayscale(75%); */
 	border-radius: 50px;
 	height: 140px;
 	width: 150px
 }
+
+.flex-box{
+	justify-content: space-between;
+}
+
+#about-me{
+	text-align: left;
+}
+
+.work-1{
+width: 100%;
+height: 200px;	
+}
+
+.work-2, .work-3, .work-4, .work-5{
+	width: 100%;
+	height: 100px;
+}
+
 
 .contact-info{
 	display: flex;
@@ -61,6 +80,19 @@ body, html {
 	align-items: flex-end;
 	list-style: none;
 }
+
+
+
+
+@media screen and (max-width:992px){
+}
+
+@media screen and (max-width:768px){
+}
+
+@media screen and (max-width:576px){
+}
+
 
 
 
