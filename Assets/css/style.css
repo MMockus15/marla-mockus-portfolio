@@ -23,7 +23,6 @@ header ul {
 	list-style: none;
 	margin: -27px;
 	font-size: 12px;
-
 }
 
 body, html {
@@ -31,7 +30,7 @@ body, html {
 }
 
 .hero-image {
-	background-image: linear-gradient(to right, #A66CFF,rgb(179, 0, 255), #AFB4FF, #B1E1FF,#9C9EFE,indigo,violet);url("b-w-trippy.jpeg");
+	background-image: url("../images/black-and-white-clouds.jpeg");
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -48,13 +47,13 @@ body, html {
 	color: white;
   }
 
-.portfolio-image{
+#portfolio-image{
 	display: flex;
+	filter: grayscale(75%);
 	border-radius: 50px;
 	height: 140px;
+	width: 150px
 }
-
-
 
 .contact-info{
 	display: flex;
