@@ -45,6 +45,7 @@ body, html {
 	transform: translate(-50%, -50%);
 	color: #32204c;
 	font-size: 46px;
+
 }
 
 #hero-text h2 {
@@ -75,11 +76,27 @@ body, html {
 .work-1{
 width: 100%;
 height: 200px;	
+border: solid 1px #32204c;
 }
 
 .work-2, .work-3, .work-4, .work-5{
 	width: 100%;
 	height: 100px;
+	border: solid 1px #32204c;
+}
+
+.box1{
+	/* position: relative;
+	display: inline-block;
+	width: 100%; */
+	text-align: center;
+	color:#32204c;
+}
+
+.refactor{
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
 }
 
 
