@@ -21,6 +21,9 @@ header ul {
 	justify-content: flex-end;
 	align-items: flex-end;
 	list-style: none;
+	margin: -27px;
+	font-size: 12px;
+	
 }
 
 .portfolio-image{
@@ -28,6 +31,8 @@ header ul {
 	border-radius: 50px;
 	height: 140px;
 }
+
+
 
 .contact-info{
 	display: flex;
