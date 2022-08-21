@@ -73,18 +73,36 @@ body, html {
 	text-align: left;
 }
 
-.work-1{
+.work-sample-image{
 width: 100%;
 height: 200px;	
 border: solid 1px #32204c;
 }
 
-.work-2, .work-3, .work-4, .work-5{
+#first {
 	width: 100%;
-	height: 100px;
+	height: 400px;	
 	border: solid 1px #32204c;
 }
 
+#work-sample {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.first-work-sample-header{
+	position: relative;
+	top: 409px;
+	left: 17px;
+}
+
+.work-sample-header {
+	position: relative;
+	top: 206px;
+	left: 17px;
+}
+
+/* original work sample styling */
 .box1{
 	position: relative;
 	display: inline-block;
