@@ -86,17 +86,18 @@ border: solid 1px #32204c;
 }
 
 .box1{
-	/* position: relative;
+	position: relative;
 	display: inline-block;
-	width: 100%; */
+	width: 100%;
 	text-align: center;
 	color:#32204c;
 }
 
-.refactor{
+.refactor, .work-two, .work-three, .work-four, .work-five{
 	position: absolute;
-	bottom: 8px;
+	bottom: 24px;
 	left: 16px;
+	font-size: 26px;
 }
 
 
