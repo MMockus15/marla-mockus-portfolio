@@ -1,5 +1,5 @@
 * {
-	margin: 10px;
+	margin: 0;
 	padding: 0;
 }
 
@@ -29,7 +29,19 @@ body, html {
 	height: 100%
 }
 
+header nav ul li {
+	padding: 15px;
+}
+
+header nav ul li a:hover {
+	color: black;
+}
+
 .hero-image {
+	display: flex;
+	padding: 10px;
+	justify-content: space-between;
+	align-items: flex-end;
 	background-image: url("../images/clouds-rainbow.webp");
 	height: 30%;
 	background-position: center;
@@ -38,31 +50,26 @@ body, html {
 	position: relative;
 }
 
-#hero-text h1 {
-	position: absolute;
-	top: 80%;
-	left: 16%;
-	transform: translate(-50%, -50%);
+.hero-image h1 {
 	color: #32204c;
-	font-size: 46px;
-
+	font-size: 4vw;
 }
 
-#hero-text h2 {
+.hero-image h2 {
 	color: #32204c;
-	position: absolute;
-	top: 80%;
-	left: 61%;
 	font-style: italic;
 	font-size: 14px;
+	}
+
+
+#about-me-section {
+	display: flex;
 }
 
-#portfolio-image{
+/* still needs work- format work header */
+#work-samples {
 	display: flex;
-	/* filter: grayscale(75%); */
-	border-radius: 50px;
-	height: 140px;
-	width: 150px
+	flex-direction: column;
 }
 
 .flex-box{
@@ -90,15 +97,19 @@ border: solid 1px #32204c;
 	flex-wrap: wrap;
 }
 
+#deemphasized {
+	display: flex;
+}
+
 .first-work-sample-header{
 	position: relative;
-	top: 409px;
+	top: 396px;
 	left: 17px;
 }
 
 .work-sample-header {
 	position: relative;
-	top: 206px;
+	top: 198px;
 	left: 17px;
 }
 
@@ -121,7 +132,7 @@ border: solid 1px #32204c;
 
 .contact-info{
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: flex-end;
 	list-style: none;
 }
@@ -133,9 +144,21 @@ border: solid 1px #32204c;
 }
 
 @media screen and (max-width:768px){
+	#about-me-section {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 @media screen and (max-width:576px){
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+	}
+	h2 {
+		align-items: center;
+		flex-direction: column;
+	}
 }
 
 
