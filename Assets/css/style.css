@@ -1,4 +1,5 @@
 * {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
@@ -10,9 +11,9 @@ body {
 
 header {
 	text-align: center;
-	height: 55px;
+	height: 3.4em;
 	width: 100%;
-	border-bottom: 13px solid #B1E1FF;
+	border-bottom: .8em solid #B1E1FF;
 	background-color: rgb #AFB4FF;
 }
 
@@ -21,8 +22,8 @@ header ul {
 	justify-content: flex-end;
 	align-items: flex-end;
 	list-style: none;
-	margin: 85px;
-	font-size: 15px;
+	margin: 5.3em;
+	font-size: .9em;
 }
 
 body, html {
@@ -30,16 +31,34 @@ body, html {
 }
 
 header nav ul li {
-	padding: 15px;
+	padding: .9em;
 }
 
-header nav ul li a:hover {
+/* header nav ul li a:hover {
 	color: black;
+} */
+
+.about-me-hover a:hover {
+	color: rgb(207, 14, 14);
 }
+
+.work-hover a:hover {
+	color: rgb(222, 101, 20);
+}
+
+.contact-me-hover a:hover {
+	color: rgb(231, 224, 29);
+}
+
+.resume-hover a:hover {
+	color: rgb(27, 207, 39);
+}
+
+
 
 .hero-image {
 	display: flex;
-	padding: 10px;
+	padding: .6em;
 	justify-content: space-between;
 	align-items: flex-end;
 	background-image: url("../images/clouds-rainbow.webp");
@@ -58,12 +77,16 @@ header nav ul li a:hover {
 .hero-image h2 {
 	color: #32204c;
 	font-style: italic;
-	font-size: 14px;
+	font-size: .9em;
 	}
 
+#headshot-image{
+	margin: 3em;
+}
 
 #about-me-section {
 	display: flex;
+	margin: 3em;
 }
 
 /* still needs work- format work header */
@@ -82,13 +105,13 @@ header nav ul li a:hover {
 
 .work-sample-image{
 width: 100%;
-height: 200px;	
+height: 25em;	
 border: solid 1px #32204c;
 }
 
 #first {
 	width: 100%;
-	height: 400px;	
+	height: 25em;	
 	border: solid 1px #32204c;
 }
 
@@ -99,18 +122,19 @@ border: solid 1px #32204c;
 
 #deemphasized {
 	display: flex;
+	/* flex-wrap: wrap; */
 }
 
 .first-work-sample-header{
 	position: relative;
-	top: 396px;
-	left: 17px;
+	top: 24.75em;
+	left: 1em;
 }
 
 .work-sample-header {
 	position: relative;
-	top: 198px;
-	left: 17px;
+	top: 12em;
+	left: 1em;
 }
 
 /* original work sample styling */
@@ -124,9 +148,9 @@ border: solid 1px #32204c;
 
 .refactor, .work-two, .work-three, .work-four, .work-five{
 	position: absolute;
-	bottom: 24px;
-	left: 16px;
-	font-size: 26px;
+	bottom: 1.5em;
+	left: 1em;
+	font-size: 1.6em;
 }
 
 
@@ -142,11 +166,75 @@ border: solid 1px #32204c;
 
 @media screen and (max-width:992px){
 }
+	#about-me {
+		margin: 2.5em;
+	}
+	
+	.first-work-sample-header {
+		top: 19.5em;
+		font-size: 1.25em;
+	}
+
+	.work-sample-header {
+		top: 19.5em;
+		font-size: 1.25em;
+	}
+
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 3em;
+	}
 
 @media screen and (max-width:768px){
 	#about-me-section {
 		flex-direction: column;
 		align-items: center;
+		margin: 2em;
+	}
+
+	#about-me {
+		margin: 1em;
+	}
+
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 3em;
+	}
+	
+	h2 {
+		align-items: center;
+		flex-direction: column;
+	}
+	.first-work-sample-header {
+		position: relative;
+		top: 11.75em;
+		left: 1em;
+		font-size: 90%;
+	}
+	.work-sample-header {
+		position: relative;
+		top: 12em;
+		left: 1em;	
+		font-size: 90%;
+	}
+	header nav ul {
+		flex-direction: column;
+		align-items: center;
+		font-size: 67%;
+	}
+	header nav ul li {
+		padding: 0;
+	}
+	#first {
+		width: 100%;
+		height: 11em;		
+	}
+	.work-sample-image {
+		height: 11em;
 	}
 }
 
@@ -154,10 +242,36 @@ border: solid 1px #32204c;
 	.contact-info {
 		align-items: center;
 		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 3em;
 	}
 	h2 {
 		align-items: center;
 		flex-direction: column;
+	}
+	.first-work-sample-header {
+		position: relative;
+		top: 14.75em;
+		left: 1em;
+		font-size: 70%;
+	}
+	.work-sample-header {
+		position: relative;
+		top: 15em;
+		left: 1em;	
+		font-size: 70%;
+	}
+	header nav ul {
+		flex-direction: column;
+		align-items: center;
+		font-size: 65%;
+	}
+	header nav ul li {
+		padding: 0;
+	}
+	#first {
+		width: 100%;
+		height: 11em;		
 	}
 }
 
