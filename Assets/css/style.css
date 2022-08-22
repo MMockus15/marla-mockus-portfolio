@@ -38,6 +38,7 @@ header nav ul li {
 	color: black;
 } */
 
+/* rainbow hover links */
 .about-me-hover a:hover {
 	color: rgb(207, 14, 14);
 }
@@ -53,8 +54,6 @@ header nav ul li {
 .resume-hover a:hover {
 	color: rgb(27, 207, 39);
 }
-
-
 
 .hero-image {
 	display: flex;
@@ -80,6 +79,7 @@ header nav ul li {
 	font-size: .9em;
 	}
 
+	/* about me section starts here */
 #headshot-image{
 	margin: 3em;
 }
@@ -89,40 +89,32 @@ header nav ul li {
 	margin: 3em;
 }
 
-/* still needs work- format work header */
-#work-samples {
-	display: flex;
-	flex-direction: column;
+#about-me-text {
+	color: #32204c;
 }
 
-.flex-box{
-	justify-content: space-between;
+.about-me-info {
+	color:#32204c;
+	font-size: .75em;
 }
 
 #about-me{
 	text-align: left;
 }
 
-.work-sample-image{
-width: 100%;
-height: 25em;	
-border: solid 1px #32204c;
+/* work sample starts here */
+#work-samples {
+	display: flex;
+	flex-direction: column;
 }
 
-#first {
-	width: 100%;
-	height: 25em;	
-	border: solid 1px #32204c;
-}
+/* .flex-box{
+	justify-content: space-between;
+} */
 
 #work-sample {
 	display: flex;
 	flex-wrap: wrap;
-}
-
-#deemphasized {
-	display: flex;
-	/* flex-wrap: wrap; */
 }
 
 .first-work-sample-header{
@@ -131,39 +123,70 @@ border: solid 1px #32204c;
 	left: 1em;
 }
 
+#first {
+	width: 100%;
+	height: 25em;	
+	border: solid 1px #32204c;
+}
+
+.work-sample-image{
+width: 100%;
+height: 25em;	
+border: solid 1px #32204c;
+}
+
+#deemphasized {
+	display: flex;
+}
+
 .work-sample-header {
 	position: relative;
 	top: 12em;
 	left: 1em;
 }
 
-/* original work sample styling */
-.box1{
+/* dont need/og sample styling*/
+/* .box1{
 	position: relative;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
 	color:#32204c;
-}
+} */
 
-.refactor, .work-two, .work-three, .work-four, .work-five{
+/* .refactor, .work-two, .work-three, .work-four, .work-five{
 	position: absolute;
 	bottom: 1.5em;
 	left: 1em;
 	font-size: 1.6em;
-}
+} */
 
-
+/* contact info styling below */
 .contact-info{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-end;
 	list-style: none;
+	color:#32204c;
 }
 
+h2 {
+	color: #32204c;
+	font-size: 1.25em;
+}
 
+ul {
+	list-style: none;
+	display: flex;
+	color:#32204c;
+}
 
+li {
+	padding: 1em;
+	color:#32204c;
+}
 
+/* media query styling */
 @media screen and (max-width:992px){
 }
 	#about-me {
@@ -185,6 +208,7 @@ border: solid 1px #32204c;
 		flex-direction: column;
 		justify-content: space-evenly;
 		margin: 3em;
+		/* list-style: none; */
 	}
 
 @media screen and (max-width:768px){
@@ -204,7 +228,7 @@ border: solid 1px #32204c;
 		justify-content: space-evenly;
 		margin: 3em;
 	}
-	
+
 	h2 {
 		align-items: center;
 		flex-direction: column;
@@ -222,9 +246,11 @@ border: solid 1px #32204c;
 		font-size: 90%;
 	}
 	header nav ul {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		font-size: 67%;
+		margin: 3em;
+		justify-content: space-evenly;
 	}
 	header nav ul li {
 		padding: 0;
@@ -262,9 +288,11 @@ border: solid 1px #32204c;
 		font-size: 70%;
 	}
 	header nav ul {
-		flex-direction: column;
+		flex-direction: row;
 		align-items: center;
 		font-size: 65%;
+		margin: 3em;
+		justify-content: space-evenly;
 	}
 	header nav ul li {
 		padding: 0;
@@ -272,6 +300,11 @@ border: solid 1px #32204c;
 	#first {
 		width: 100%;
 		height: 11em;		
+	}
+
+	li {
+		padding: 1em;
+		font-size: 10px;
 	}
 }
 
