@@ -34,10 +34,6 @@ header nav ul li {
 	padding: .9em;
 }
 
-/* header nav ul li a:hover {
-	color: black;
-} */
-
 /* rainbow hover links */
 .about-me-hover a:hover {
 	color: rgb(207, 14, 14);
@@ -79,7 +75,7 @@ header nav ul li {
 	font-size: .9em;
 	}
 
-	/* about me section starts here */
+/* about me section starts here */
 #headshot-image{
 	margin: 3em;
 }
@@ -108,10 +104,6 @@ header nav ul li {
 	flex-direction: column;
 }
 
-/* .flex-box{
-	justify-content: space-between;
-} */
-
 #work-sample {
 	display: flex;
 	flex-wrap: wrap;
@@ -121,6 +113,7 @@ header nav ul li {
 	position: relative;
 	top: 24.75em;
 	left: 1em;
+	color:#32204c;
 }
 
 #first {
@@ -143,23 +136,8 @@ border: solid 1px #32204c;
 	position: relative;
 	top: 12em;
 	left: 1em;
-}
-
-/* dont need/og sample styling*/
-/* .box1{
-	position: relative;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
 	color:#32204c;
-} */
-
-/* .refactor, .work-two, .work-three, .work-four, .work-five{
-	position: absolute;
-	bottom: 1.5em;
-	left: 1em;
-	font-size: 1.6em;
-} */
+}
 
 /* contact info styling below */
 .contact-info{
@@ -173,6 +151,7 @@ border: solid 1px #32204c;
 h2 {
 	color: #32204c;
 	font-size: 1.25em;
+	text-align: center;
 }
 
 ul {
@@ -186,23 +165,25 @@ li {
 	color:#32204c;
 }
 
+a[href^="mailto:"]
+{ 
+  color:#32204c;
+}
+
 /* media query styling */
 @media screen and (max-width:992px){
 }
 	#about-me {
 		margin: 2.5em;
 	}
-	
 	.first-work-sample-header {
 		top: 19.5em;
 		font-size: 1.25em;
 	}
-
 	.work-sample-header {
 		top: 19.5em;
 		font-size: 1.25em;
 	}
-
 	.contact-info {
 		align-items: center;
 		flex-direction: column;
@@ -217,18 +198,15 @@ li {
 		align-items: center;
 		margin: 2em;
 	}
-
 	#about-me {
 		margin: 1em;
 	}
-
 	.contact-info {
 		align-items: center;
 		flex-direction: column;
 		justify-content: space-evenly;
 		margin: 3em;
 	}
-
 	h2 {
 		align-items: center;
 		flex-direction: column;
@@ -311,16 +289,5 @@ li {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  /* color pallet */
+/* color pallet */
   /* A66CFF purple, 9C9EFE light blue, AFB4FF perriwinkle, B1E1FF light sky blue */
