@@ -6,7 +6,7 @@ For week 2's challenge we began working on a portfolio page. This page is very i
 
 ![Image](./assets/images/marla-mockus-profile.png)
 
-[deployed site](https://mmockus15.github.io/code-refactor-horiseon/)
+[deployed site](https://mmockus15.github.io/marla-mockus-portfolio/)
 
 Acceptance Criteria: 
 
