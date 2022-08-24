@@ -1,0 +1,293 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #A66CFF;
+	font-family: Libre Baskerville;
+}
+
+header {
+	text-align: center;
+	height: 3.4em;
+	width: 100%;
+	border-bottom: .8em solid #B1E1FF;
+	background-color: rgb #AFB4FF;
+}
+
+header ul {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	list-style: none;
+	margin: 5.3em;
+	font-size: .9em;
+}
+
+body, html {
+	height: 100%
+}
+
+header nav ul li {
+	padding: .9em;
+}
+
+/* rainbow hover links */
+.about-me-hover a:hover {
+	color: rgb(207, 14, 14);
+}
+
+.work-hover a:hover {
+	color: rgb(222, 101, 20);
+}
+
+.contact-me-hover a:hover {
+	color: rgb(231, 224, 29);
+}
+
+.resume-hover a:hover {
+	color: rgb(27, 207, 39);
+}
+
+.hero-image {
+	display: flex;
+	padding: .6em;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-image: url("../images/clouds-rainbow.webp");
+	height: 30%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-image h1 {
+	color: #32204c;
+	font-size: 4vw;
+}
+
+.hero-image h2 {
+	color: #32204c;
+	font-style: italic;
+	font-size: .9em;
+	}
+
+/* about me section starts here */
+#headshot-image{
+	margin: 3em;
+}
+
+#about-me-section {
+	display: flex;
+	margin: 3em;
+}
+
+#about-me-text {
+	color: #32204c;
+}
+
+.about-me-info {
+	color:#32204c;
+	font-size: .75em;
+}
+
+#about-me{
+	text-align: left;
+}
+
+/* work sample starts here */
+#work-samples {
+	display: flex;
+	flex-direction: column;
+}
+
+#work-sample {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.first-work-sample-header{
+	position: relative;
+	top: 24.75em;
+	left: 1em;
+	color:#32204c;
+}
+
+#first {
+	width: 100%;
+	height: 25em;	
+	border: solid 1px #32204c;
+}
+
+.work-sample-image{
+width: 100%;
+height: 25em;	
+border: solid 1px #32204c;
+}
+
+#deemphasized {
+	display: flex;
+}
+
+.work-sample-header {
+	position: relative;
+	top: 12em;
+	left: 1em;
+	color:#32204c;
+}
+
+/* contact info styling below */
+.contact-info{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	list-style: none;
+	color:#32204c;
+}
+
+h2 {
+	color: #32204c;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	color:#32204c;
+}
+
+li {
+	padding: 1em;
+	color:#32204c;
+}
+
+a[href^="mailto:"]
+{ 
+  color:#32204c;
+}
+
+/* media query styling */
+@media screen and (max-width:992px){
+}
+	#about-me {
+		margin: 2.5em;
+	}
+	.first-work-sample-header {
+		top: 19.5em;
+		font-size: 1.25em;
+	}
+	.work-sample-header {
+		top: 19.5em;
+		font-size: 1.25em;
+	}
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 3em;
+		/* list-style: none; */
+	}
+
+@media screen and (max-width:768px){
+	#about-me-section {
+		flex-direction: column;
+		align-items: center;
+		margin: 2em;
+	}
+	#about-me {
+		margin: 1em;
+	}
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 3em;
+	}
+	h2 {
+		align-items: center;
+		flex-direction: column;
+	}
+	.first-work-sample-header {
+		position: relative;
+		top: 11.75em;
+		left: 1em;
+		font-size: 90%;
+	}
+	.work-sample-header {
+		position: relative;
+		top: 12em;
+		left: 1em;	
+		font-size: 90%;
+	}
+	header nav ul {
+		flex-direction: row;
+		align-items: center;
+		font-size: 67%;
+		margin: 3em;
+		justify-content: space-evenly;
+	}
+	header nav ul li {
+		padding: 0;
+	}
+	#first {
+		width: 100%;
+		height: 11em;		
+	}
+	.work-sample-image {
+		height: 11em;
+	}
+}
+
+@media screen and (max-width:576px){
+	.contact-info {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		margin: 3em;
+	}
+	h2 {
+		align-items: center;
+		flex-direction: column;
+	}
+	.first-work-sample-header {
+		position: relative;
+		top: 14.75em;
+		left: 1em;
+		font-size: 70%;
+	}
+	.work-sample-header {
+		position: relative;
+		top: 15em;
+		left: 1em;	
+		font-size: 70%;
+	}
+	header nav ul {
+		flex-direction: row;
+		align-items: center;
+		font-size: 65%;
+		margin: 3em;
+		justify-content: space-evenly;
+	}
+	header nav ul li {
+		padding: 0;
+	}
+	#first {
+		width: 100%;
+		height: 11em;		
+	}
+
+	li {
+		padding: 1em;
+		font-size: 10px;
+	}
+}
+
+
+
+
+/* color pallet */
+  /* A66CFF purple, 9C9EFE light blue, AFB4FF perriwinkle, B1E1FF light sky blue */
