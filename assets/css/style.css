@@ -4,8 +4,13 @@
 	padding: 0;
 }
 
+:root {
+	--dark: #32204c;
+	--background: #A66CFF;
+}
+
 body {
-	background-color: #A66CFF;
+	background-color: var(--background);
 	font-family: Libre Baskerville;
 }
 
@@ -65,12 +70,12 @@ header nav ul li {
 }
 
 .hero-image h1 {
-	color: #32204c;
+	color: var(--dark);
 	font-size: 4vw;
 }
 
 .hero-image h2 {
-	color: #32204c;
+	color: var(--dark);
 	font-style: italic;
 	font-size: .9em;
 	}
@@ -86,11 +91,11 @@ header nav ul li {
 }
 
 #about-me-text {
-	color: #32204c;
+	color: var(--dark);
 }
 
 .about-me-info {
-	color:#32204c;
+	color: var(--dark);
 	font-size: .75em;
 }
 
@@ -113,19 +118,19 @@ header nav ul li {
 	position: relative;
 	top: 24.75em;
 	left: 1em;
-	color:#32204c;
+	color: var(--dark);
 }
 
 #first {
 	width: 100%;
 	height: 25em;	
-	border: solid 1px #32204c;
+	border: solid 1px var(--dark);
 }
 
 .work-sample-image{
 width: 100%;
 height: 25em;	
-border: solid 1px #32204c;
+border: solid 1px var(--dark);
 }
 
 #deemphasized {
@@ -136,7 +141,7 @@ border: solid 1px #32204c;
 	position: relative;
 	top: 12em;
 	left: 1em;
-	color:#32204c;
+	color: var(--dark);
 }
 
 /* contact info styling below */
@@ -145,11 +150,11 @@ border: solid 1px #32204c;
 	justify-content: space-evenly;
 	align-items: flex-end;
 	list-style: none;
-	color:#32204c;
+	color: var(--dark);
 }
 
 h2 {
-	color: #32204c;
+	color: var(--dark);
 	font-size: 1.25em;
 	text-align: center;
 }
@@ -157,17 +162,17 @@ h2 {
 ul {
 	list-style: none;
 	display: flex;
-	color:#32204c;
+	color: var(--dark);
 }
 
 li {
 	padding: 1em;
-	color:#32204c;
+	color: var(--dark);
 }
 
 a[href^="mailto:"]
 { 
-  color:#32204c;
+  	color: var(--dark);
 }
 
 /* media query styling */
@@ -189,7 +194,6 @@ a[href^="mailto:"]
 		flex-direction: column;
 		justify-content: space-evenly;
 		margin: 3em;
-		/* list-style: none; */
 	}
 
 @media screen and (max-width:768px){
@@ -285,6 +289,7 @@ a[href^="mailto:"]
 		font-size: 10px;
 	}
 }
+
 
 
 
